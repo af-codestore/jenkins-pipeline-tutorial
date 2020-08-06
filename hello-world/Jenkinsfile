@@ -6,6 +6,11 @@ pipeline {
                 echo 'Run the static analysis to the code' 
             }
         }
+        stage('My greeting') {
+            steps {
+								echo 'I'm here again'
+						}
+        }
         stage('Compile') {
             steps {
                 echo 'Compile the source code' 
